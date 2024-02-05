@@ -20,6 +20,7 @@ namespace APIsAndJSON
             var kanyeQuote = JObject.Parse(kanyeResponse).GetValue("quote").ToString();
 
             Console.WriteLine($"Kanye: {kanyeQuote}.");
+            Console.WriteLine();
         }
        
         public static void Ron()
@@ -33,6 +34,7 @@ namespace APIsAndJSON
             var ronQuote = JArray.Parse(ronReponse).ToString().Replace('[', ' ').Replace(']', ' ').Replace('"', ' ').Trim();
 
             Console.WriteLine($"Ron: {ronQuote}");
+            Console.WriteLine();
         }
     }
 }

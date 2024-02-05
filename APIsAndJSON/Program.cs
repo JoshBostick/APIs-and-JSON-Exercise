@@ -10,10 +10,22 @@ namespace APIsAndJSON
     {
         static void Main(string[] args)
         {
+            /// RonVsKanye
+            
+            for (int i = 0; i < 5; i++)
+            {
+                RonVSKanyeAPI.Kanye();
+                RonVSKanyeAPI.Ron();
+                Console.WriteLine("------");
 
-            RonVSKanyeAPI.Kanye();
-            RonVSKanyeAPI.Ron();
+            }
 
+            //------------------------------------------------------------------
+            
+            //OpenWeatherMap
+
+            OpenWeatherMapAPI.Weather();
+            
         }
     }
 }
